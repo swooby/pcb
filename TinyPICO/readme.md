@@ -1,5 +1,6 @@
 
 # INA219 Ammeter
+Hopefully similar to Adafruit's INA219 FeatherWing (https://www.adafruit.com/product/3650)
 ![alt text](https://github.com/swooby/pcb/blob/master/TinyPICO/Shield_INA219.png "INA291 v1")
 ![alt text](https://github.com/swooby/pcb/blob/master/TinyPICO/Shield_INA219_top.png "INA291 v1 Top")
 ![alt text](https://github.com/swooby/pcb/blob/master/TinyPICO/Shield_INA219_bottom.png "INA291 v1 Bottom")
