@@ -12839,6 +12839,65 @@ OSHW_LOGO</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="wirepad" urn="urn:adsk.eagle:library:412">
+<description>&lt;b&gt;Single Pads&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="1,6/0,9" urn="urn:adsk.eagle:footprint:30812/1" library_version="1">
+<description>&lt;b&gt;THROUGH-HOLE PAD&lt;/b&gt;</description>
+<wire x1="-0.508" y1="0.762" x2="-0.762" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-0.762" y1="0.762" x2="-0.762" y2="0.508" width="0.1524" layer="21"/>
+<wire x1="-0.762" y1="-0.508" x2="-0.762" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="-0.762" y1="-0.762" x2="-0.508" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="0.508" y1="-0.762" x2="0.762" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="0.762" y1="-0.762" x2="0.762" y2="-0.508" width="0.1524" layer="21"/>
+<wire x1="0.762" y1="0.508" x2="0.762" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="0.762" y1="0.762" x2="0.508" y2="0.762" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="0.635" width="0.1524" layer="51"/>
+<pad name="1" x="0" y="0" drill="0.9144" diameter="1.6002" shape="octagon"/>
+<text x="-0.762" y="1.016" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0" y="0.6" size="0.0254" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="1,6/0,9" urn="urn:adsk.eagle:package:30840/1" type="box" library_version="1">
+<description>THROUGH-HOLE PAD</description>
+<packageinstances>
+<packageinstance name="1,6/0,9"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="PAD" urn="urn:adsk.eagle:symbol:30808/1" library_version="1">
+<wire x1="-1.016" y1="1.016" x2="1.016" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="-1.016" x2="1.016" y2="1.016" width="0.254" layer="94"/>
+<text x="-1.143" y="1.8542" size="1.778" layer="95">&gt;NAME</text>
+<text x="-1.143" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="P" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="1,6/0,9" urn="urn:adsk.eagle:component:30858/1" prefix="PAD" uservalue="yes" library_version="1">
+<description>&lt;b&gt;THROUGH-HOLE PAD&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="PAD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1,6/0,9">
+<connects>
+<connect gate="1" pin="P" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:30840/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 <attribute name="COMPANY" value="Unexpected Maker"/>
@@ -12875,6 +12934,8 @@ OSHW_LOGO</description>
 <part name="U$11" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="JP2" library="microbuilder" deviceset="HEADER-1X2" device="ROUND"/>
 <part name="R6" library="microbuilder" deviceset="RESISTOR_4PACK" device="" value="10K"/>
+<part name="R5+" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="1,6/0,9" device="" package3d_urn="urn:adsk.eagle:package:30840/1"/>
+<part name="R5-" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="1,6/0,9" device="" package3d_urn="urn:adsk.eagle:package:30840/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -12922,9 +12983,9 @@ OSHW_LOGO</description>
 <instance part="U$5" gate="G$1" x="53.34" y="137.16" smashed="yes">
 <attribute name="VALUE" x="51.816" y="134.62" size="1.27" layer="96"/>
 </instance>
-<instance part="R5" gate="G$1" x="119.38" y="134.62" smashed="yes" rot="R90">
-<attribute name="NAME" x="116.84" y="134.62" size="1.27" layer="95" font="vector" rot="R90" align="center"/>
-<attribute name="VALUE" x="119.38" y="134.62" size="1.016" layer="96" font="vector" ratio="15" rot="R90" align="center"/>
+<instance part="R5" gate="G$1" x="114.3" y="134.62" smashed="yes" rot="R90">
+<attribute name="NAME" x="111.76" y="134.62" size="1.27" layer="95" font="vector" rot="R90" align="center"/>
+<attribute name="VALUE" x="114.3" y="134.62" size="1.016" layer="96" font="vector" ratio="15" rot="R90" align="center"/>
 </instance>
 <instance part="J1" gate="G$1" x="129.54" y="137.16" smashed="yes" rot="MR180">
 <attribute name="VALUE" x="127" y="142.24" size="1.27" layer="96" rot="MR180"/>
@@ -12964,6 +13025,14 @@ OSHW_LOGO</description>
 <instance part="R6" gate="G$1" x="55.88" y="121.92" smashed="yes" rot="R270">
 <attribute name="NAME" x="58.42" y="121.92" size="1.27" layer="95" font="vector" rot="R270" align="center"/>
 <attribute name="VALUE" x="55.88" y="121.92" size="1.016" layer="96" font="vector" ratio="15" rot="R270" align="center"/>
+</instance>
+<instance part="R5+" gate="1" x="116.84" y="139.7" smashed="yes" rot="R180">
+<attribute name="NAME" x="118.237" y="138.8618" size="1.778" layer="95"/>
+<attribute name="VALUE" x="117.983" y="143.002" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R5-" gate="1" x="116.84" y="129.54" smashed="yes" rot="R180">
+<attribute name="NAME" x="118.491" y="128.7018" size="1.778" layer="95"/>
+<attribute name="VALUE" x="117.983" y="132.842" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -13204,17 +13273,19 @@ OSHW_LOGO</description>
 </net>
 <net name="VIN1+" class="0">
 <segment>
-<wire x1="104.14" y1="137.16" x2="114.3" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="137.16" x2="114.3" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="142.24" x2="119.38" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="142.24" x2="119.38" y2="139.7" width="0.1524" layer="91"/>
-<label x="106.68" y="137.16" size="1.778" layer="95"/>
+<wire x1="104.14" y1="137.16" x2="111.76" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="137.16" x2="111.76" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="142.24" x2="114.3" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="142.24" x2="114.3" y2="139.7" width="0.1524" layer="91"/>
+<label x="104.14" y="137.16" size="1.778" layer="95"/>
 <pinref part="U1" gate="G$1" pin="VIN+"/>
 <pinref part="R5" gate="G$1" pin="2"/>
-<junction x="119.38" y="142.24"/>
+<junction x="114.3" y="142.24"/>
 <pinref part="J1" gate="G$1" pin="2"/>
-<wire x1="124.46" y1="142.24" x2="119.38" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="142.24" x2="114.3" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="137.16" x2="124.46" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="R5+" gate="1" pin="P"/>
+<junction x="114.3" y="139.7"/>
 </segment>
 <segment>
 <wire x1="165.1" y1="127" x2="139.7" y2="127" width="0.1524" layer="91"/>
@@ -13224,17 +13295,19 @@ OSHW_LOGO</description>
 </net>
 <net name="VIN1-" class="0">
 <segment>
-<wire x1="104.14" y1="129.54" x2="114.3" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="129.54" x2="114.3" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="124.46" x2="119.38" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="124.46" x2="119.38" y2="129.54" width="0.1524" layer="91"/>
-<label x="106.68" y="129.54" size="1.778" layer="95"/>
+<wire x1="104.14" y1="129.54" x2="111.76" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="129.54" x2="111.76" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="124.46" x2="114.3" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="124.46" x2="114.3" y2="129.54" width="0.1524" layer="91"/>
+<label x="104.14" y="129.54" size="1.778" layer="95"/>
 <pinref part="U1" gate="G$1" pin="VIN-"/>
 <pinref part="R5" gate="G$1" pin="1"/>
-<junction x="119.38" y="124.46"/>
+<junction x="114.3" y="124.46"/>
 <pinref part="J1" gate="G$1" pin="1"/>
-<wire x1="119.38" y1="124.46" x2="124.46" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="124.46" x2="124.46" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="124.46" x2="124.46" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="R5-" gate="1" pin="P"/>
+<junction x="114.3" y="129.54"/>
 </segment>
 <segment>
 <wire x1="165.1" y1="129.54" x2="139.7" y2="129.54" width="0.1524" layer="91"/>
