@@ -660,34 +660,6 @@
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 <wire x1="0" y1="0.4" x2="0" y2="-0.4" width="0.3048" layer="21"/>
 </package>
-<package name="1X02_OVAL">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.2032" layer="51"/>
-<pad name="1" x="-1.27" y="0" drill="1" shape="long" rot="R90"/>
-<pad name="2" x="1.27" y="0" drill="1" shape="long" rot="R90"/>
-<text x="-2.6162" y="1.8288" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="-2.54" y="-3.175" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
-<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
-</package>
-<package name="1X02_ROUND">
-<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.2032" layer="51"/>
-<pad name="1" x="-1.27" y="0" drill="1" diameter="1.778" rot="R90"/>
-<pad name="2" x="1.27" y="0" drill="1" diameter="1.778" rot="R90"/>
-<text x="-2.6162" y="1.8288" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="-2.54" y="-3.175" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
-<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
-</package>
-<package name="1X02_SMT">
-<description>&lt;p&gt;&lt;b&gt;Pin Headers&lt;/b&gt;&lt;br/&gt;
-2 Pin, 0.1"/2.54mm pitch, SMT&lt;/p&gt;</description>
-<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.2032" layer="51"/>
-<smd name="1" x="-1.27" y="1.27" dx="1" dy="3.5" layer="1"/>
-<smd name="2" x="1.27" y="-1.27" dx="1" dy="3.5" layer="1"/>
-<text x="-2.6162" y="3.25" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="-2.54" y="-4.5" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
-</package>
 <package name="RESPACK_4X0603">
 <wire x1="-1.6" y1="0.8" x2="1.6" y2="0.8" width="0.2032" layer="51"/>
 <wire x1="1.6" y1="0.8" x2="1.6" y2="-0.8" width="0.2032" layer="51"/>
@@ -3774,16 +3746,6 @@
 <text x="-1.524" y="1.016" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="3.3V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
-<symbol name="PINHD2">
-<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="1.27" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="5.08" x2="-6.35" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="-6.35" y1="5.08" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
-<text x="-6.35" y="5.715" size="1.778" layer="95">&gt;NAME</text>
-<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="2" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="FRAME_A4_ADAFRUIT">
@@ -4281,41 +4243,6 @@
 </gates>
 <devices>
 <device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="HEADER-1X2" prefix="JP" uservalue="yes">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="PINHD2" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="1X02_OVAL">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="ROUND" package="1X02_ROUND">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="SMT" package="1X02_SMT">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -5017,6 +4944,219 @@ part number 2062-2P from STA</description>
 <pad name="2" x="-1.27" y="-5.85" drill="0.8"/>
 <pad name="1" x="1.27" y="-5.85" drill="0.8"/>
 </package>
+<package name="1X01_LONGPAD" urn="urn:adsk.eagle:footprint:37641/1" library_version="1">
+<description>&lt;h3&gt;Plated Through Hole - Long Pad&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:1&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_01&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.1176" diameter="1.8796" shape="long" rot="R90"/>
+<text x="-1.27" y="2.032" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.27" y="-2.667" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+</package>
+<package name="1X01" urn="urn:adsk.eagle:footprint:37642/1" library_version="1">
+<description>&lt;h3&gt;Plated Through Hole&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:1&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_01&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="1.27" y1="0.635" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="-0.635" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="1.27" y2="0.635" width="0.2032" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<text x="-1.27" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.27" y="-1.524" size="0.6096" layer="27" font="vector" ratio="20" align="top-left">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+</package>
+<package name="1X01_2MM" urn="urn:adsk.eagle:footprint:37643/1" library_version="1">
+<description>&lt;h3&gt;Plated Through Hole - 2mm&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:1&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_01&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<pad name="1" x="0" y="0" drill="2" diameter="3.302" rot="R90"/>
+<text x="-1.651" y="1.778" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.651" y="-2.413" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="1X01_OFFSET" urn="urn:adsk.eagle:footprint:37644/1" library_version="1">
+<description>&lt;h3&gt;Plated Through Hole - Long Pad w/ Offset Hole&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:1&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_01&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="1.27" y2="0.635" width="0.2032" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.1176" diameter="1.8796" shape="offset" rot="R90"/>
+<text x="-1.27" y="3.048" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+</package>
+<package name="1X01_POGOPIN_HOLE_0.061_DIA" urn="urn:adsk.eagle:footprint:37645/1" library_version="1">
+<description>&lt;h3&gt;Pogo Pin - 0.061"&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:1&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.061"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_01&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<circle x="0" y="0" radius="0.635" width="0.127" layer="51"/>
+<pad name="1" x="0" y="0" drill="0.9" diameter="0.8128" rot="R90" thermals="no"/>
+<hole x="0" y="0" drill="1.5494"/>
+<text x="-1.27" y="1.143" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.27" y="-1.778" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="1X01_POGOPIN_HOLE_0.58_DIA" urn="urn:adsk.eagle:footprint:37646/1" library_version="1">
+<description>&lt;h3&gt;Pogo Pin Hole - 0.58" &lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:1&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.58"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_01&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<circle x="0" y="0" radius="0.635" width="0.127" layer="51"/>
+<pad name="1" x="0" y="0" drill="0.9" diameter="0.8128" rot="R90" thermals="no"/>
+<hole x="0" y="0" drill="1.4732"/>
+<text x="-1.27" y="1.143" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.27" y="-1.778" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="SNAP-FEMALE" urn="urn:adsk.eagle:footprint:37647/1" library_version="1">
+<description>&lt;h3&gt;Sew-On Fabric Snap - Female&lt;/h3&gt;
+Equivalent to size #1/0 snap. 
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 1&lt;/li&gt;
+&lt;li&gt;Area:8mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_01&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<pad name="1" x="0" y="0" drill="2.921" diameter="4.572"/>
+<polygon width="0.254" layer="1">
+<vertex x="-4.0005" y="0" curve="-89.997136"/>
+<vertex x="0" y="4.0005" curve="-90.002865"/>
+<vertex x="4.0005" y="0" curve="-89.997136"/>
+<vertex x="0" y="-4.0005" curve="-89.997136"/>
+</polygon>
+<polygon width="0.3556" layer="29">
+<vertex x="-4.0005" y="0" curve="-90.002865"/>
+<vertex x="0" y="4.0005" curve="-90.002865"/>
+<vertex x="4.0005" y="0" curve="-89.997136"/>
+<vertex x="0" y="-4.0005" curve="-89.997136"/>
+</polygon>
+<polygon width="0.3556" layer="31">
+<vertex x="-4.0005" y="0" curve="-89.997136"/>
+<vertex x="0" y="4.0005" curve="-90.002865"/>
+<vertex x="4.0005" y="0" curve="-89.997136"/>
+<vertex x="0" y="-4.0005" curve="-89.997136"/>
+</polygon>
+<polygon width="0.3556" layer="41">
+<vertex x="-4.0005" y="0" curve="-89.997136"/>
+<vertex x="0" y="4.0005" curve="-90.002865"/>
+<vertex x="4.0005" y="0" curve="-89.997136"/>
+<vertex x="0" y="-4.0005" curve="-89.997136"/>
+</polygon>
+<text x="-1.27" y="4.318" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.27" y="-4.953" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="SNAP-MALE" urn="urn:adsk.eagle:footprint:37648/1" library_version="1">
+<description>&lt;h3&gt;Sew-On Fabric Snap - Male&lt;/h3&gt;
+Equivalent to size #1/0 snap. 
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 1&lt;/li&gt;
+&lt;li&gt;Area:8mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_01&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<smd name="2" x="0" y="0" dx="7.62" dy="7.62" layer="1" roundness="100"/>
+<text x="-1.524" y="4.064" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.651" y="-4.826" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="SPRING-CONNECTOR" urn="urn:adsk.eagle:footprint:37649/1" library_version="1">
+<description>&lt;h3&gt;Spring Connector&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 1&lt;/li&gt;
+&lt;li&gt;Area:0.25"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_01&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<smd name="P$2" x="0" y="0" dx="7.112" dy="7.112" layer="1" roundness="100"/>
+<text x="-1.27" y="3.81" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.524" y="-4.572" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="1X01NS_KIT" urn="urn:adsk.eagle:footprint:37650/1" library_version="1">
+<description>&lt;h3&gt;Plated Through Hole - No Silk Outline Kit Version&lt;/h3&gt;
+&lt;p&gt; Mask on only one side to make soldering in kits easier.
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:1&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_01&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90" stop="no"/>
+<circle x="0" y="0" radius="0.508" width="0" layer="29"/>
+<circle x="0" y="0" radius="0.9398" width="0" layer="30"/>
+<text x="-1.27" y="1.143" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.27" y="-1.016" size="0.6096" layer="27" font="vector" ratio="20" align="top-left">&gt;VALUE</text>
+</package>
+<package name="1X01_NO_SILK" urn="urn:adsk.eagle:footprint:37651/1" library_version="1">
+<description>&lt;h3&gt;Plated Through Hole - No Silk Outline&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:1&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_01&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<text x="-1.27" y="1.143" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.27" y="-1.778" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+</package>
+<package name="SMTSO-256-ET-0.165DIA" urn="urn:adsk.eagle:footprint:37652/1" library_version="1">
+<description>&lt;h3&gt;SMTSO-256-ET Flush Mount Nut&lt;/h3&gt;
+.165 drill
+&lt;br&gt;
+Fits 4-40 Screws. 
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 1&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_01&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<circle x="0" y="0" radius="1.016" width="0.127" layer="51"/>
+<wire x1="-1.016" y1="2.286" x2="-2.286" y2="1.016" width="1.016" layer="31" curve="42.075022"/>
+<wire x1="2.286" y1="1.016" x2="1.016" y2="2.286" width="1.016" layer="31" curve="42.075022"/>
+<wire x1="1.016" y1="-2.286" x2="2.286" y2="-1.016" width="1.016" layer="31" curve="42.075022"/>
+<wire x1="-2.286" y1="-1.016" x2="-1.016" y2="-2.286" width="1.016" layer="31" curve="42.075022"/>
+<pad name="P$1" x="0" y="0" drill="4.191" diameter="6.1976"/>
+<text x="-1.397" y="3.302" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.524" y="-3.937" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="SCREWTERMINAL-5MM-2" urn="urn:adsk.eagle:package:38044/1" type="box" library_version="1">
@@ -5329,6 +5469,165 @@ part number 2062-2P from STA</description>
 <packageinstance name="1X02_RA_PTH_FEMALE"/>
 </packageinstances>
 </package3d>
+<package3d name="1X01_LONGPAD" urn="urn:adsk.eagle:package:38030/1" type="box" library_version="1">
+<description>Plated Through Hole - Long Pad
+Specifications:
+Pin count:1
+Pin pitch:0.1"
+
+Example device(s):
+CONN_01
+</description>
+<packageinstances>
+<packageinstance name="1X01_LONGPAD"/>
+</packageinstances>
+</package3d>
+<package3d name="1X01" urn="urn:adsk.eagle:package:38028/1" type="box" library_version="1">
+<description>Plated Through Hole
+Specifications:
+Pin count:1
+Pin pitch:0.1"
+
+Example device(s):
+CONN_01
+</description>
+<packageinstances>
+<packageinstance name="1X01"/>
+</packageinstances>
+</package3d>
+<package3d name="1X01_2MM" urn="urn:adsk.eagle:package:38029/1" type="box" library_version="1">
+<description>Plated Through Hole - 2mm
+Specifications:
+Pin count:1
+
+Example device(s):
+CONN_01
+</description>
+<packageinstances>
+<packageinstance name="1X01_2MM"/>
+</packageinstances>
+</package3d>
+<package3d name="1X01_OFFSET" urn="urn:adsk.eagle:package:38035/1" type="box" library_version="1">
+<description>Plated Through Hole - Long Pad w/ Offset Hole
+Specifications:
+Pin count:1
+
+Example device(s):
+CONN_01
+</description>
+<packageinstances>
+<packageinstance name="1X01_OFFSET"/>
+</packageinstances>
+</package3d>
+<package3d name="1X01_POGOPIN_HOLE_0.061_DIA" urn="urn:adsk.eagle:package:38036/1" type="box" library_version="1">
+<description>Pogo Pin - 0.061"
+Specifications:
+Pin count:1
+Pin pitch:0.061"
+
+Example device(s):
+CONN_01
+</description>
+<packageinstances>
+<packageinstance name="1X01_POGOPIN_HOLE_0.061_DIA"/>
+</packageinstances>
+</package3d>
+<package3d name="1X01_POGOPIN_HOLE_0.58_DIA" urn="urn:adsk.eagle:package:38031/1" type="box" library_version="1">
+<description>Pogo Pin Hole - 0.58" 
+Specifications:
+Pin count:1
+Pin pitch:0.58"
+
+Example device(s):
+CONN_01
+</description>
+<packageinstances>
+<packageinstance name="1X01_POGOPIN_HOLE_0.58_DIA"/>
+</packageinstances>
+</package3d>
+<package3d name="SNAP-FEMALE" urn="urn:adsk.eagle:package:38032/1" type="box" library_version="1">
+<description>Sew-On Fabric Snap - Female
+Equivalent to size #1/0 snap. 
+Specifications:
+Pin count: 1
+Area:8mm
+
+Example device(s):
+CONN_01
+</description>
+<packageinstances>
+<packageinstance name="SNAP-FEMALE"/>
+</packageinstances>
+</package3d>
+<package3d name="SNAP-MALE" urn="urn:adsk.eagle:package:38033/1" type="box" library_version="1">
+<description>Sew-On Fabric Snap - Male
+Equivalent to size #1/0 snap. 
+Specifications:
+Pin count: 1
+Area:8mm
+
+Example device(s):
+CONN_01
+</description>
+<packageinstances>
+<packageinstance name="SNAP-MALE"/>
+</packageinstances>
+</package3d>
+<package3d name="SPRING-CONNECTOR" urn="urn:adsk.eagle:package:38034/1" type="box" library_version="1">
+<description>Spring Connector
+Specifications:
+Pin count: 1
+Area:0.25"
+
+Example device(s):
+CONN_01
+</description>
+<packageinstances>
+<packageinstance name="SPRING-CONNECTOR"/>
+</packageinstances>
+</package3d>
+<package3d name="1X01NS_KIT" urn="urn:adsk.eagle:package:38038/1" type="box" library_version="1">
+<description>Plated Through Hole - No Silk Outline Kit Version
+ Mask on only one side to make soldering in kits easier.
+Specifications:
+Pin count:1
+Pin pitch:0.1"
+
+Example device(s):
+CONN_01
+</description>
+<packageinstances>
+<packageinstance name="1X01NS_KIT"/>
+</packageinstances>
+</package3d>
+<package3d name="1X01_NO_SILK" urn="urn:adsk.eagle:package:38041/1" type="box" library_version="1">
+<description>Plated Through Hole - No Silk Outline
+Specifications:
+Pin count:1
+Pin pitch:0.1"
+
+Example device(s):
+CONN_01
+</description>
+<packageinstances>
+<packageinstance name="1X01_NO_SILK"/>
+</packageinstances>
+</package3d>
+<package3d name="SMTSO-256-ET-0.165DIA" urn="urn:adsk.eagle:package:38037/1" type="box" library_version="1">
+<description>SMTSO-256-ET Flush Mount Nut
+.165 drill
+
+Fits 4-40 Screws. 
+Specifications:
+Pin count: 1
+
+Example device(s):
+CONN_01
+</description>
+<packageinstances>
+<packageinstance name="SMTSO-256-ET-0.165DIA"/>
+</packageinstances>
+</package3d>
 </packages3d>
 <symbols>
 <symbol name="CONN_02" urn="urn:adsk.eagle:symbol:37653/1" library_version="1">
@@ -5343,6 +5642,17 @@ part number 2062-2P from STA</description>
 <text x="-2.54" y="5.588" size="1.778" layer="95" font="vector">&gt;NAME</text>
 <pin name="1" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="2" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+<symbol name="CONN_01" urn="urn:adsk.eagle:symbol:37640/1" library_version="1">
+<description>&lt;h3&gt;1 Pin Connection&lt;/h3&gt;</description>
+<wire x1="3.81" y1="-2.54" x2="-2.54" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.6096" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="3.81" y1="-2.54" x2="3.81" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="3.81" y2="2.54" width="0.4064" layer="94"/>
+<text x="-2.54" y="-4.826" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+<text x="-2.54" y="3.048" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<pin name="1" x="7.62" y="0" visible="off" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -5687,6 +5997,183 @@ part number 2062-2P from STA</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="CONN_01" urn="urn:adsk.eagle:component:38322/1" prefix="J" uservalue="yes" library_version="1">
+<description>&lt;h3&gt;Single connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections&lt;/h3&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+On any of the 0.1 inch spaced packages, you can populate with these:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/116"&gt; Break Away Headers - Straight&lt;/a&gt; (PRT-00116)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/553"&gt; Break Away Male Headers - Right Angle&lt;/a&gt; (PRT-00553)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/115"&gt; Female Headers&lt;/a&gt; (PRT-00115)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/117"&gt; Break Away Headers - Machine Pin&lt;/a&gt; (PRT-00117)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/743"&gt; Break Away Female Headers - Swiss Machine Pin&lt;/a&gt; (PRT-00743)&lt;/li&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;/p&gt;
+This device is also useful as a general connection point to wire up your design to another part of your project. Our various solder wires solder well into these plated through hole pads.
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11375"&gt; Hook-Up Wire - Assortment (Stranded, 22 AWG)&lt;/a&gt; (PRT-11375)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11367"&gt; Hook-Up Wire - Assortment (Solid Core, 22 AWG)&lt;/a&gt; (PRT-11367)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/categories/141"&gt; View the entire wire category on our website here&lt;/a&gt;&lt;/li&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Special notes:&lt;/b&gt;
+&lt;p&gt; &lt;/p&gt;
+SMTSO-256-ET is a "flush mount" nut for a 4-40 screw. We mostly use this on specialty testbeds; it is a nice way to connect hardware to your PCB at an adjustable hieght.
+&lt;p&gt;&lt;/p&gt;
+Also note, the SNAP packages are for using a snappable style connector. We sell a baggie of snaps and they are also used on two LilyPad designs:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11347"&gt; Snap Assortment - 30 pack (male and female)&lt;/a&gt; (DEV-11347)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10941"&gt;LilyPad Arduino SimpleSnap&lt;/a&gt; (DEV-10941)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10940"&gt; LilyPad SimpleSnap Protoboard&lt;/a&gt; (DEV-10940)&lt;/li&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="CONN_01" x="0" y="0"/>
+</gates>
+<devices>
+<device name="PTH_LONGPAD" package="1X01_LONGPAD">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38030/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="1X01">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38028/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PTH_2MM" package="1X01_2MM">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38029/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="OFFSET" package="1X01_OFFSET">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38035/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="POGOPIN_HOLE_LARGE" package="1X01_POGOPIN_HOLE_0.061_DIA">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38036/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="POGOPIN_HOLE_0.58" package="1X01_POGOPIN_HOLE_0.58_DIA">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38031/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SNAP-FEMALE" package="SNAP-FEMALE">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38032/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SNAP-MALE" package="SNAP-MALE">
+<connects>
+<connect gate="G$1" pin="1" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38033/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SPRING-CONN" package="SPRING-CONNECTOR">
+<connects>
+<connect gate="G$1" pin="1" pad="P$2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38034/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="SF_ID" value="PRT-11822" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="PTH_NO_SILK_KIT" package="1X01NS_KIT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38038/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PTH_NO_SILK_YES_STOP" package="1X01_NO_SILK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38041/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMTSO-256-ET-0.165DIA" package="SMTSO-256-ET-0.165DIA">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38037/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="HW-08694" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -5717,7 +6204,6 @@ part number 2062-2P from STA</description>
 <part name="U$9" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$10" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$11" library="microbuilder" deviceset="3.3V" device=""/>
-<part name="JP1" library="microbuilder" deviceset="HEADER-1X2" device="ROUND"/>
 <part name="R2" library="microbuilder" deviceset="RESISTOR_4PACK" device="" value="10K"/>
 <part name="U2" library="microbuilder" deviceset="INA219" device="" value="INA219BIDCNT"/>
 <part name="C2" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="1uF"/>
@@ -5728,13 +6214,12 @@ part number 2062-2P from STA</description>
 <part name="U$20" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$21" library="microbuilder" deviceset="GND" device=""/>
 <part name="R3" library="microbuilder" deviceset="RESISTOR" device="2512" value="0.1/1% (PT2512FK-070R1L)"/>
-<part name="J2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="5MM" package3d_urn="urn:adsk.eagle:package:38044/1" value="5mm"/>
+<part name="J3" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="5MM" package3d_urn="urn:adsk.eagle:package:38044/1" value="5mm"/>
 <part name="U$22" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$23" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$24" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$25" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$26" library="microbuilder" deviceset="3.3V" device=""/>
-<part name="JP2" library="microbuilder" deviceset="HEADER-1X2" device="ROUND"/>
 <part name="R4" library="microbuilder" deviceset="RESISTOR_4PACK" device="" value="10K"/>
 <part name="R3+" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="1,6/0,9" device="" package3d_urn="urn:adsk.eagle:package:30840/1"/>
 <part name="R3-" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="1,6/0,9" device="" package3d_urn="urn:adsk.eagle:package:30840/1"/>
@@ -5751,13 +6236,12 @@ part number 2062-2P from STA</description>
 <part name="U$15" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$16" library="microbuilder" deviceset="GND" device=""/>
 <part name="R5" library="microbuilder" deviceset="RESISTOR" device="2512" value="0.1/1% (PT2512FK-070R1L)"/>
-<part name="J3" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="5MM" package3d_urn="urn:adsk.eagle:package:38044/1" value="5mm"/>
+<part name="J5" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="5MM" package3d_urn="urn:adsk.eagle:package:38044/1" value="5mm"/>
 <part name="U$17" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$27" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$28" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$29" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$30" library="microbuilder" deviceset="3.3V" device=""/>
-<part name="JP3" library="microbuilder" deviceset="HEADER-1X2" device="ROUND"/>
 <part name="R6" library="microbuilder" deviceset="RESISTOR_4PACK" device="" value="10K"/>
 <part name="R5+" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="1,6/0,9" device="" package3d_urn="urn:adsk.eagle:package:30840/1"/>
 <part name="R5-" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="1,6/0,9" device="" package3d_urn="urn:adsk.eagle:package:30840/1"/>
@@ -5770,16 +6254,23 @@ part number 2062-2P from STA</description>
 <part name="U$33" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$34" library="microbuilder" deviceset="GND" device=""/>
 <part name="R7" library="microbuilder" deviceset="RESISTOR" device="2512" value="0.1/1% (PT2512FK-070R1L)"/>
-<part name="J4" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="5MM" package3d_urn="urn:adsk.eagle:package:38044/1" value="5mm"/>
+<part name="J7" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="5MM" package3d_urn="urn:adsk.eagle:package:38044/1" value="5mm"/>
 <part name="U$35" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$36" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$37" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$38" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$39" library="microbuilder" deviceset="3.3V" device=""/>
-<part name="JP4" library="microbuilder" deviceset="HEADER-1X2" device="ROUND"/>
 <part name="R8" library="microbuilder" deviceset="RESISTOR_4PACK" device="" value="10K"/>
 <part name="R7+" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="1,6/0,9" device="" package3d_urn="urn:adsk.eagle:package:30840/1"/>
 <part name="R7-" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="1,6/0,9" device="" package3d_urn="urn:adsk.eagle:package:30840/1"/>
+<part name="J2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_01" device="" package3d_urn="urn:adsk.eagle:package:38028/1"/>
+<part name="J4" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_01" device="" package3d_urn="urn:adsk.eagle:package:38028/1"/>
+<part name="J6" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_01" device="" package3d_urn="urn:adsk.eagle:package:38028/1"/>
+<part name="J8" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_01" device="" package3d_urn="urn:adsk.eagle:package:38028/1"/>
+<part name="U$40" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$41" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$42" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$43" library="microbuilder" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5844,10 +6335,6 @@ part number 2062-2P from STA</description>
 <instance part="U$11" gate="G$1" x="109.22" y="167.64" smashed="yes">
 <attribute name="VALUE" x="107.696" y="168.656" size="1.27" layer="96"/>
 </instance>
-<instance part="JP1" gate="G$1" x="119.38" y="139.7" smashed="yes">
-<attribute name="NAME" x="113.03" y="145.415" size="1.778" layer="95"/>
-<attribute name="VALUE" x="113.03" y="134.62" size="1.778" layer="96"/>
-</instance>
 <instance part="R2" gate="G$3" x="101.6" y="160.02" smashed="yes" rot="R90">
 <attribute name="NAME" x="99.06" y="160.02" size="1.27" layer="95" font="vector" rot="R90" align="center"/>
 <attribute name="VALUE" x="101.6" y="160.02" size="1.016" layer="96" font="vector" ratio="15" rot="R90" align="center"/>
@@ -5896,7 +6383,7 @@ part number 2062-2P from STA</description>
 <attribute name="NAME" x="73.66" y="93.98" size="1.27" layer="95" font="vector" rot="R90" align="center"/>
 <attribute name="VALUE" x="76.2" y="93.98" size="1.016" layer="96" font="vector" ratio="15" rot="R90" align="center"/>
 </instance>
-<instance part="J2" gate="G$1" x="93.98" y="93.98" smashed="yes" rot="MR0">
+<instance part="J3" gate="G$1" x="93.98" y="93.98" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="95.504" y="89.408" size="1.27" layer="96" rot="MR0"/>
 <attribute name="NAME" x="92.202" y="99.822" size="1.27" layer="95" rot="MR0"/>
 </instance>
@@ -5914,10 +6401,6 @@ part number 2062-2P from STA</description>
 </instance>
 <instance part="U$26" gate="G$1" x="109.22" y="114.3" smashed="yes">
 <attribute name="VALUE" x="107.696" y="115.316" size="1.27" layer="96"/>
-</instance>
-<instance part="JP2" gate="G$1" x="119.38" y="86.36" smashed="yes">
-<attribute name="NAME" x="113.03" y="92.075" size="1.778" layer="95"/>
-<attribute name="VALUE" x="113.03" y="81.28" size="1.778" layer="96"/>
 </instance>
 <instance part="R4" gate="G$3" x="101.6" y="106.68" smashed="yes" rot="R90">
 <attribute name="NAME" x="99.06" y="106.68" size="1.27" layer="95" font="vector" rot="R90" align="center"/>
@@ -5989,7 +6472,7 @@ part number 2062-2P from STA</description>
 <attribute name="NAME" x="200.66" y="147.32" size="1.27" layer="95" font="vector" rot="R90" align="center"/>
 <attribute name="VALUE" x="203.2" y="147.32" size="1.016" layer="96" font="vector" ratio="15" rot="R90" align="center"/>
 </instance>
-<instance part="J3" gate="G$1" x="220.98" y="147.32" smashed="yes" rot="MR0">
+<instance part="J5" gate="G$1" x="220.98" y="147.32" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="222.504" y="142.748" size="1.27" layer="96" rot="MR0"/>
 <attribute name="NAME" x="219.202" y="153.162" size="1.27" layer="95" rot="MR0"/>
 </instance>
@@ -6007,10 +6490,6 @@ part number 2062-2P from STA</description>
 </instance>
 <instance part="U$30" gate="G$1" x="236.22" y="167.64" smashed="yes">
 <attribute name="VALUE" x="234.696" y="168.656" size="1.27" layer="96"/>
-</instance>
-<instance part="JP3" gate="G$1" x="246.38" y="139.7" smashed="yes">
-<attribute name="NAME" x="240.03" y="145.415" size="1.778" layer="95"/>
-<attribute name="VALUE" x="240.03" y="134.62" size="1.778" layer="96"/>
 </instance>
 <instance part="R6" gate="G$3" x="228.6" y="160.02" smashed="yes" rot="R90">
 <attribute name="NAME" x="226.06" y="160.02" size="1.27" layer="95" font="vector" rot="R90" align="center"/>
@@ -6068,7 +6547,7 @@ part number 2062-2P from STA</description>
 <attribute name="NAME" x="200.66" y="93.98" size="1.27" layer="95" font="vector" rot="R90" align="center"/>
 <attribute name="VALUE" x="203.2" y="93.98" size="1.016" layer="96" font="vector" ratio="15" rot="R90" align="center"/>
 </instance>
-<instance part="J4" gate="G$1" x="220.98" y="93.98" smashed="yes" rot="MR0">
+<instance part="J7" gate="G$1" x="220.98" y="93.98" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="222.504" y="89.408" size="1.27" layer="96" rot="MR0"/>
 <attribute name="NAME" x="218.948" y="99.822" size="1.27" layer="95" rot="MR0"/>
 </instance>
@@ -6086,10 +6565,6 @@ part number 2062-2P from STA</description>
 </instance>
 <instance part="U$39" gate="G$1" x="236.22" y="114.3" smashed="yes">
 <attribute name="VALUE" x="234.696" y="115.316" size="1.27" layer="96"/>
-</instance>
-<instance part="JP4" gate="G$1" x="246.38" y="86.36" smashed="yes">
-<attribute name="NAME" x="240.03" y="92.075" size="1.778" layer="95"/>
-<attribute name="VALUE" x="240.03" y="81.28" size="1.778" layer="96"/>
 </instance>
 <instance part="R8" gate="G$3" x="228.6" y="106.68" smashed="yes" rot="R90">
 <attribute name="NAME" x="226.06" y="106.68" size="1.27" layer="95" font="vector" rot="R90" align="center"/>
@@ -6114,6 +6589,34 @@ part number 2062-2P from STA</description>
 <instance part="R7-" gate="1" x="205.74" y="88.9" smashed="yes" rot="R180">
 <attribute name="NAME" x="207.391" y="88.0618" size="1.778" layer="95"/>
 <attribute name="VALUE" x="206.883" y="92.202" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="J2" gate="G$1" x="93.98" y="132.08" smashed="yes" rot="R180">
+<attribute name="VALUE" x="96.52" y="136.906" size="1.778" layer="96" font="vector" rot="R180"/>
+<attribute name="NAME" x="96.52" y="129.032" size="1.778" layer="95" font="vector" rot="R180"/>
+</instance>
+<instance part="J4" gate="G$1" x="93.98" y="78.74" smashed="yes" rot="R180">
+<attribute name="VALUE" x="96.52" y="83.566" size="1.778" layer="96" font="vector" rot="R180"/>
+<attribute name="NAME" x="96.52" y="75.692" size="1.778" layer="95" font="vector" rot="R180"/>
+</instance>
+<instance part="J6" gate="G$1" x="220.98" y="132.08" smashed="yes" rot="R180">
+<attribute name="VALUE" x="223.52" y="136.906" size="1.778" layer="96" font="vector" rot="R180"/>
+<attribute name="NAME" x="223.52" y="129.032" size="1.778" layer="95" font="vector" rot="R180"/>
+</instance>
+<instance part="J8" gate="G$1" x="220.98" y="78.74" smashed="yes" rot="R180">
+<attribute name="VALUE" x="223.52" y="83.566" size="1.778" layer="96" font="vector" rot="R180"/>
+<attribute name="NAME" x="223.52" y="75.692" size="1.778" layer="95" font="vector" rot="R180"/>
+</instance>
+<instance part="U$40" gate="G$1" x="86.36" y="129.54" smashed="yes">
+<attribute name="VALUE" x="84.836" y="127" size="1.27" layer="96"/>
+</instance>
+<instance part="U$41" gate="G$1" x="86.36" y="76.2" smashed="yes">
+<attribute name="VALUE" x="84.836" y="73.66" size="1.27" layer="96"/>
+</instance>
+<instance part="U$42" gate="G$1" x="213.36" y="129.54" smashed="yes">
+<attribute name="VALUE" x="211.836" y="127" size="1.27" layer="96"/>
+</instance>
+<instance part="U$43" gate="G$1" x="213.36" y="76.2" smashed="yes">
+<attribute name="VALUE" x="211.836" y="73.66" size="1.27" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -6282,6 +6785,22 @@ part number 2062-2P from STA</description>
 <pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="U$34" gate="G$1" pin="GND"/>
 <wire x1="154.94" y1="101.6" x2="154.94" y2="99.06" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J6" gate="G$1" pin="1"/>
+<pinref part="U$42" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="J8" gate="G$1" pin="1"/>
+<pinref part="U$43" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="J4" gate="G$1" pin="1"/>
+<pinref part="U$41" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="1"/>
+<pinref part="U$40" gate="G$1" pin="GND"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -6502,11 +7021,6 @@ part number 2062-2P from STA</description>
 <pinref part="R1+" gate="1" pin="P"/>
 <junction x="76.2" y="152.4"/>
 </segment>
-<segment>
-<wire x1="116.84" y1="139.7" x2="99.06" y2="139.7" width="0.1524" layer="91"/>
-<label x="99.06" y="139.7" size="1.778" layer="95"/>
-<pinref part="JP1" gate="G$1" pin="2"/>
-</segment>
 </net>
 <net name="VIN1-" class="0">
 <segment>
@@ -6523,11 +7037,6 @@ part number 2062-2P from STA</description>
 <wire x1="86.36" y1="137.16" x2="86.36" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="R1-" gate="1" pin="P"/>
 <junction x="76.2" y="142.24"/>
-</segment>
-<segment>
-<wire x1="116.84" y1="142.24" x2="99.06" y2="142.24" width="0.1524" layer="91"/>
-<label x="99.06" y="142.24" size="1.778" layer="95"/>
-<pinref part="JP1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -6677,11 +7186,6 @@ part number 2062-2P from STA</description>
 </net>
 <net name="VIN2+" class="0">
 <segment>
-<wire x1="116.84" y1="86.36" x2="99.06" y2="86.36" width="0.1524" layer="91"/>
-<label x="99.06" y="86.36" size="1.778" layer="95"/>
-<pinref part="JP2" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <wire x1="66.04" y1="96.52" x2="73.66" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="96.52" x2="73.66" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="101.6" x2="76.2" y2="101.6" width="0.1524" layer="91"/>
@@ -6690,7 +7194,7 @@ part number 2062-2P from STA</description>
 <pinref part="U2" gate="G$1" pin="VIN+"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <junction x="76.2" y="101.6"/>
-<pinref part="J2" gate="G$1" pin="2"/>
+<pinref part="J3" gate="G$1" pin="2"/>
 <wire x1="86.36" y1="101.6" x2="76.2" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="96.52" x2="86.36" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="R3+" gate="1" pin="P"/>
@@ -6698,11 +7202,6 @@ part number 2062-2P from STA</description>
 </segment>
 </net>
 <net name="VIN2-" class="0">
-<segment>
-<wire x1="116.84" y1="88.9" x2="99.06" y2="88.9" width="0.1524" layer="91"/>
-<label x="99.06" y="88.9" size="1.778" layer="95"/>
-<pinref part="JP2" gate="G$1" pin="1"/>
-</segment>
 <segment>
 <wire x1="66.04" y1="88.9" x2="73.66" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="88.9" x2="73.66" y2="83.82" width="0.1524" layer="91"/>
@@ -6712,7 +7211,7 @@ part number 2062-2P from STA</description>
 <pinref part="U2" gate="G$1" pin="VIN-"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <junction x="76.2" y="83.82"/>
-<pinref part="J2" gate="G$1" pin="1"/>
+<pinref part="J3" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="83.82" x2="86.36" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="83.82" x2="86.36" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="R3-" gate="1" pin="P"/>
@@ -6777,16 +7276,11 @@ part number 2062-2P from STA</description>
 <pinref part="U3" gate="G$1" pin="VIN+"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 <junction x="203.2" y="154.94"/>
-<pinref part="J3" gate="G$1" pin="2"/>
+<pinref part="J5" gate="G$1" pin="2"/>
 <wire x1="213.36" y1="154.94" x2="203.2" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="149.86" x2="213.36" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="R5+" gate="1" pin="P"/>
 <junction x="203.2" y="152.4"/>
-</segment>
-<segment>
-<wire x1="243.84" y1="139.7" x2="226.06" y2="139.7" width="0.1524" layer="91"/>
-<label x="226.06" y="139.7" size="1.778" layer="95"/>
-<pinref part="JP3" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="VIN3-" class="0">
@@ -6799,16 +7293,11 @@ part number 2062-2P from STA</description>
 <pinref part="U3" gate="G$1" pin="VIN-"/>
 <pinref part="R5" gate="G$1" pin="1"/>
 <junction x="203.2" y="137.16"/>
-<pinref part="J3" gate="G$1" pin="1"/>
+<pinref part="J5" gate="G$1" pin="1"/>
 <wire x1="203.2" y1="137.16" x2="213.36" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="137.16" x2="213.36" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="R5-" gate="1" pin="P"/>
 <junction x="203.2" y="142.24"/>
-</segment>
-<segment>
-<wire x1="243.84" y1="142.24" x2="226.06" y2="142.24" width="0.1524" layer="91"/>
-<label x="226.06" y="142.24" size="1.778" layer="95"/>
-<pinref part="JP3" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="VIN4+" class="0">
@@ -6821,16 +7310,11 @@ part number 2062-2P from STA</description>
 <pinref part="U4" gate="G$1" pin="VIN+"/>
 <pinref part="R7" gate="G$1" pin="2"/>
 <junction x="203.2" y="101.6"/>
-<pinref part="J4" gate="G$1" pin="2"/>
+<pinref part="J7" gate="G$1" pin="2"/>
 <wire x1="213.36" y1="101.6" x2="203.2" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="96.52" x2="213.36" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="R7+" gate="1" pin="P"/>
 <junction x="203.2" y="99.06"/>
-</segment>
-<segment>
-<wire x1="243.84" y1="86.36" x2="226.06" y2="86.36" width="0.1524" layer="91"/>
-<label x="226.06" y="86.36" size="1.778" layer="95"/>
-<pinref part="JP4" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="VIN4-" class="0">
@@ -6843,16 +7327,11 @@ part number 2062-2P from STA</description>
 <pinref part="U4" gate="G$1" pin="VIN-"/>
 <pinref part="R7" gate="G$1" pin="1"/>
 <junction x="203.2" y="83.82"/>
-<pinref part="J4" gate="G$1" pin="1"/>
+<pinref part="J7" gate="G$1" pin="1"/>
 <wire x1="203.2" y1="83.82" x2="213.36" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="83.82" x2="213.36" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="R7-" gate="1" pin="P"/>
 <junction x="203.2" y="88.9"/>
-</segment>
-<segment>
-<wire x1="243.84" y1="88.9" x2="226.06" y2="88.9" width="0.1524" layer="91"/>
-<label x="226.06" y="88.9" size="1.778" layer="95"/>
-<pinref part="JP4" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
@@ -6895,22 +7374,18 @@ part number 2062-2P from STA</description>
 <approved hash="112,1,86.36,55.88,,,,,,"/>
 <approved hash="113,1,19.3904,154.94,A0,,,,,"/>
 <approved hash="113,1,11.7704,154.94,A1,,,,,"/>
-<approved hash="113,1,117.077,142.466,JP1,,,,,"/>
 <approved hash="113,1,19.3904,101.6,A2,,,,,"/>
 <approved hash="113,1,11.7704,101.6,A3,,,,,"/>
-<approved hash="113,1,117.077,89.1261,JP2,,,,,"/>
 <approved hash="113,1,78.6757,99.06,R3+,,,,,"/>
 <approved hash="113,1,78.4813,88.9,R3-,,,,,"/>
 <approved hash="113,1,78.6757,152.4,R1+,,,,,"/>
 <approved hash="113,1,78.4813,142.24,R1-,,,,,"/>
 <approved hash="113,1,146.39,154.94,A4,,,,,"/>
 <approved hash="113,1,138.77,154.94,A5,,,,,"/>
-<approved hash="113,1,244.077,142.466,JP3,,,,,"/>
 <approved hash="113,1,205.676,152.4,R5+,,,,,"/>
 <approved hash="113,1,205.481,142.24,R5-,,,,,"/>
 <approved hash="113,1,146.39,101.6,A6,,,,,"/>
 <approved hash="113,1,138.77,101.6,A7,,,,,"/>
-<approved hash="113,1,244.077,89.1261,JP4,,,,,"/>
 <approved hash="113,1,205.676,99.06,R7+,,,,,"/>
 <approved hash="113,1,205.481,88.9,R7-,,,,,"/>
 </errors>
