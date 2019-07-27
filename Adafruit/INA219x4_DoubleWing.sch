@@ -7388,6 +7388,10 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <approved hash="113,1,138.77,101.6,A7,,,,,"/>
 <approved hash="113,1,205.676,99.06,R7+,,,,,"/>
 <approved hash="113,1,205.481,88.9,R7-,,,,,"/>
+<approved hash="113,1,89.5773,130.742,J2,,,,,"/>
+<approved hash="113,1,89.5773,77.4023,J4,,,,,"/>
+<approved hash="113,1,216.577,130.742,J6,,,,,"/>
+<approved hash="113,1,216.577,77.4023,J8,,,,,"/>
 </errors>
 </schematic>
 </drawing>
