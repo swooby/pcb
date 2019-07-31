@@ -9,7 +9,7 @@
 </settings>
 <grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -24,17 +24,17 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="14" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="13" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="13" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -47,10 +47,10 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
@@ -59,8 +59,8 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="yes"/>
@@ -352,7 +352,7 @@ Load: ±3.2A</text>
 <wire x1="9.271" y1="37.338" x2="9.525" y2="37.592" width="0.1524" layer="22"/>
 <wire x1="9.525" y1="37.592" x2="9.525" y2="39.624" width="0.1524" layer="22"/>
 <wire x1="9.525" y1="33.528" x2="9.525" y2="31.496" width="0.1524" layer="22"/>
-<text x="11.557" y="40.005" size="1.016" layer="22" rot="MR270">parallel R1#1</text>
+<text x="11.684" y="41.021" size="1.016" layer="22" rot="MR270">parallel R1#1</text>
 <polygon width="0.1524" layer="21">
 <vertex x="17.78" y="41.529"/>
 <vertex x="17.78" y="43.434"/>
@@ -379,7 +379,7 @@ Load: ±3.2A</text>
 <wire x1="41.529" y1="33.782" x2="41.275" y2="33.528" width="0.1524" layer="22"/>
 <wire x1="41.275" y1="33.528" x2="41.275" y2="31.496" width="0.1524" layer="22"/>
 <wire x1="41.275" y1="37.592" x2="41.275" y2="39.624" width="0.1524" layer="22"/>
-<text x="39.243" y="31.115" size="1.016" layer="22" rot="MR90">parallel R1#2</text>
+<text x="39.243" y="30.099" size="1.016" layer="22" rot="MR90">parallel R1#2</text>
 <polygon width="0.1524" layer="21">
 <vertex x="33.02" y="33.782"/>
 <vertex x="33.02" y="31.877"/>
@@ -406,7 +406,7 @@ Load: ±3.2A</text>
 <wire x1="9.271" y1="13.208" x2="9.525" y2="13.462" width="0.1524" layer="22"/>
 <wire x1="9.525" y1="13.462" x2="9.525" y2="15.494" width="0.1524" layer="22"/>
 <wire x1="9.525" y1="9.398" x2="9.525" y2="7.366" width="0.1524" layer="22"/>
-<text x="11.557" y="15.875" size="1.016" layer="22" rot="MR270">parallel R1#3</text>
+<text x="11.811" y="17.018" size="1.016" layer="22" rot="MR270">parallel R1#3</text>
 <polygon width="0.1524" layer="21">
 <vertex x="17.78" y="17.399"/>
 <vertex x="17.78" y="19.304"/>
@@ -433,7 +433,7 @@ Load: ±3.2A</text>
 <wire x1="41.529" y1="9.652" x2="41.275" y2="9.398" width="0.1524" layer="22"/>
 <wire x1="41.275" y1="9.398" x2="41.275" y2="7.366" width="0.1524" layer="22"/>
 <wire x1="41.275" y1="13.462" x2="41.275" y2="15.494" width="0.1524" layer="22"/>
-<text x="39.243" y="6.985" size="1.016" layer="22" rot="MR90">parallel R1#4</text>
+<text x="39.243" y="6.096" size="1.016" layer="22" rot="MR90">parallel R1#4</text>
 <polygon width="0.1524" layer="21">
 <vertex x="33.02" y="9.652"/>
 <vertex x="33.02" y="7.747"/>
