@@ -9,10 +9,10 @@ NOTE: Unless otherwise specified, **all of these boards are UNTESTED**!
 ## Adafruit DoubleWing INA219x4 (quad) Ammeter
 Hopefully similar to Adafruit's INA219 FeatherWing (https://www.adafruit.com/product/3650)
 
-![alt text](./Adafruit/INA219x4%20DoubleWing_top.png "INA291x4 Top")
-![alt text](./Adafruit/INA219x4%20DoubleWing_bottom.png "INA291x4 Bottom")
-![alt text](./Adafruit/INA219x4%20DoubleWing_top2.png "INA291x4 Top")
-![alt text](./Adafruit/INA219x4%20DoubleWing_bottom2.png "INA291x4 Bottom")
+![alt text](./Adafruit/INA219x4_DoubleWing_top.png "INA291x4 Top")
+![alt text](./Adafruit/INA219x4_DoubleWing_bottom.png "INA291x4 Bottom")
+![alt text](./Adafruit/INA219x4_DoubleWing_top2.png "INA291x4 Top")
+![alt text](./Adafruit/INA219x4_DoubleWing_bottom2.png "INA291x4 Bottom")
 
 ## Adafruit FeatherWing INA219x2 (dual) Ammeter
 ...
