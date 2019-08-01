@@ -16389,9 +16389,9 @@ Solder type</description>
 <instance part="GND5" gate="1" x="101.6" y="127" smashed="yes">
 <attribute name="VALUE" x="99.06" y="124.46" size="1.778" layer="96"/>
 </instance>
-<instance part="R5" gate="A" x="81.28" y="157.48" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="82.6262" y="140.5128" size="3.4798" layer="96" ratio="10" rot="SMR0"/>
-<attribute name="NAME" x="81.5594" y="143.0528" size="3.4798" layer="95" ratio="10" rot="SMR0"/>
+<instance part="R5" gate="A" x="81.788" y="158.75" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="83.1342" y="141.7828" size="3.4798" layer="96" ratio="10" rot="SMR0"/>
+<attribute name="NAME" x="82.0674" y="144.3228" size="3.4798" layer="95" ratio="10" rot="SMR0"/>
 </instance>
 <instance part="3" gate="-0R" x="139.7" y="104.14" smashed="yes" rot="R180">
 <attribute name="NAME" x="137.16" y="102.87" size="1.778" layer="95" rot="R180"/>
@@ -16661,62 +16661,6 @@ Solder type</description>
 <junction x="177.8" y="152.4"/>
 </segment>
 </net>
-<net name="N$21" class="0">
-<segment>
-<pinref part="R5" gate="A" pin="16"/>
-<pinref part="JP1" gate="A" pin="1"/>
-<wire x1="68.58" y1="157.48" x2="50.8" y2="144.78" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$22" class="0">
-<segment>
-<pinref part="R5" gate="A" pin="15"/>
-<pinref part="JP1" gate="A" pin="2"/>
-<wire x1="68.58" y1="152.4" x2="58.42" y2="144.78" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$23" class="0">
-<segment>
-<pinref part="R5" gate="A" pin="14"/>
-<pinref part="JP1" gate="A" pin="3"/>
-<wire x1="68.58" y1="147.32" x2="50.8" y2="142.24" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$24" class="0">
-<segment>
-<pinref part="R5" gate="A" pin="13"/>
-<pinref part="JP1" gate="A" pin="4"/>
-<wire x1="68.58" y1="142.24" x2="58.42" y2="142.24" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$25" class="0">
-<segment>
-<pinref part="R5" gate="A" pin="12"/>
-<pinref part="JP1" gate="A" pin="5"/>
-<wire x1="68.58" y1="137.16" x2="50.8" y2="139.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$26" class="0">
-<segment>
-<pinref part="R5" gate="A" pin="11"/>
-<pinref part="JP1" gate="A" pin="6"/>
-<wire x1="68.58" y1="132.08" x2="58.42" y2="139.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$27" class="0">
-<segment>
-<pinref part="R5" gate="A" pin="10"/>
-<pinref part="JP1" gate="A" pin="7"/>
-<wire x1="68.58" y1="127" x2="50.8" y2="137.16" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$28" class="0">
-<segment>
-<pinref part="R5" gate="A" pin="9"/>
-<pinref part="JP1" gate="A" pin="8"/>
-<wire x1="68.58" y1="121.92" x2="58.42" y2="137.16" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="B1" class="0">
 <segment>
 <pinref part="1" gate="1" pin="1"/>
@@ -16812,8 +16756,8 @@ Solder type</description>
 </segment>
 <segment>
 <pinref part="R5" gate="A" pin="1"/>
-<wire x1="81.28" y1="157.48" x2="86.36" y2="157.48" width="0.1524" layer="91"/>
-<label x="81.28" y="157.48" size="1.778" layer="95"/>
+<wire x1="81.788" y1="158.75" x2="86.868" y2="158.75" width="0.1524" layer="91"/>
+<label x="81.788" y="158.75" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A2" class="0">
@@ -16823,8 +16767,8 @@ Solder type</description>
 </segment>
 <segment>
 <pinref part="R5" gate="A" pin="2"/>
-<wire x1="81.28" y1="152.4" x2="86.36" y2="152.4" width="0.1524" layer="91"/>
-<label x="81.28" y="152.4" size="1.778" layer="95"/>
+<wire x1="81.788" y1="153.67" x2="86.868" y2="153.67" width="0.1524" layer="91"/>
+<label x="81.788" y="153.67" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A3" class="0">
@@ -16834,8 +16778,8 @@ Solder type</description>
 </segment>
 <segment>
 <pinref part="R5" gate="A" pin="3"/>
-<wire x1="81.28" y1="147.32" x2="86.36" y2="147.32" width="0.1524" layer="91"/>
-<label x="81.28" y="147.32" size="1.778" layer="95"/>
+<wire x1="81.788" y1="148.59" x2="86.868" y2="148.59" width="0.1524" layer="91"/>
+<label x="81.788" y="148.59" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A4" class="0">
@@ -16845,8 +16789,8 @@ Solder type</description>
 </segment>
 <segment>
 <pinref part="R5" gate="A" pin="4"/>
-<wire x1="81.28" y1="142.24" x2="86.36" y2="142.24" width="0.1524" layer="91"/>
-<label x="81.28" y="142.24" size="1.778" layer="95"/>
+<wire x1="81.788" y1="143.51" x2="86.868" y2="143.51" width="0.1524" layer="91"/>
+<label x="81.788" y="143.51" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A5" class="0">
@@ -16856,8 +16800,8 @@ Solder type</description>
 </segment>
 <segment>
 <pinref part="R5" gate="A" pin="5"/>
-<wire x1="81.28" y1="137.16" x2="86.36" y2="137.16" width="0.1524" layer="91"/>
-<label x="81.28" y="137.16" size="1.778" layer="95"/>
+<wire x1="81.788" y1="138.43" x2="86.868" y2="138.43" width="0.1524" layer="91"/>
+<label x="81.788" y="138.43" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A6" class="0">
@@ -16867,8 +16811,8 @@ Solder type</description>
 </segment>
 <segment>
 <pinref part="R5" gate="A" pin="6"/>
-<wire x1="81.28" y1="132.08" x2="86.36" y2="132.08" width="0.1524" layer="91"/>
-<label x="81.28" y="132.08" size="1.778" layer="95"/>
+<wire x1="81.788" y1="133.35" x2="86.868" y2="133.35" width="0.1524" layer="91"/>
+<label x="81.788" y="133.35" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A7" class="0">
@@ -16878,8 +16822,8 @@ Solder type</description>
 </segment>
 <segment>
 <pinref part="R5" gate="A" pin="7"/>
-<wire x1="81.28" y1="127" x2="86.36" y2="127" width="0.1524" layer="91"/>
-<label x="81.28" y="127" size="1.778" layer="95"/>
+<wire x1="81.788" y1="128.27" x2="86.868" y2="128.27" width="0.1524" layer="91"/>
+<label x="81.788" y="128.27" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A8" class="0">
@@ -16889,24 +16833,110 @@ Solder type</description>
 </segment>
 <segment>
 <pinref part="R5" gate="A" pin="8"/>
-<wire x1="81.28" y1="121.92" x2="86.36" y2="121.92" width="0.1524" layer="91"/>
-<label x="81.28" y="121.92" size="1.778" layer="95"/>
+<wire x1="81.788" y1="123.19" x2="86.868" y2="123.19" width="0.1524" layer="91"/>
+<label x="81.788" y="123.19" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="1"/>
+<pinref part="R5" gate="A" pin="16"/>
+<wire x1="69.088" y1="158.75" x2="50.8" y2="158.75" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="158.75" x2="50.8" y2="144.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="R5" gate="A" pin="15"/>
+<wire x1="69.088" y1="153.67" x2="58.42" y2="153.67" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="A" pin="2"/>
+<wire x1="58.42" y1="153.67" x2="58.42" y2="144.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="R5" gate="A" pin="14"/>
+<wire x1="69.088" y1="148.59" x2="45.72" y2="148.59" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="148.59" x2="45.72" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="A" pin="3"/>
+<wire x1="45.72" y1="142.24" x2="50.8" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="R5" gate="A" pin="13"/>
+<wire x1="69.088" y1="143.51" x2="66.04" y2="143.51" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="143.51" x2="66.04" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="A" pin="4"/>
+<wire x1="66.04" y1="142.24" x2="58.42" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="R5" gate="A" pin="12"/>
+<wire x1="69.088" y1="138.43" x2="66.04" y2="138.43" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="138.43" x2="66.04" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="132.08" x2="45.72" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="132.08" x2="45.72" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="A" pin="5"/>
+<wire x1="45.72" y1="139.7" x2="50.8" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="R5" gate="A" pin="11"/>
+<wire x1="69.088" y1="133.35" x2="63.5" y2="133.35" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="133.35" x2="63.5" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="A" pin="6"/>
+<wire x1="63.5" y1="139.7" x2="58.42" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="R5" gate="A" pin="10"/>
+<wire x1="69.088" y1="128.27" x2="50.8" y2="128.27" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="128.27" x2="50.8" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="A" pin="7"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="R5" gate="A" pin="9"/>
+<wire x1="69.088" y1="123.19" x2="58.42" y2="123.19" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="A" pin="8"/>
+<wire x1="58.42" y1="123.19" x2="58.42" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
 <errors>
-<approved hash="102,1,203.2,160.02,+5V,5V,,,,"/>
-<approved hash="104,1,182.88,160.02,U4,VCC,5V,,,"/>
+<approved hash="102,1,182.88,152.4,+5V,5V,,,,"/>
+<approved hash="104,1,162.56,152.4,U4,VCC,5V,,,"/>
 <approved hash="106,1,203.2,53.34,3V3,,,,,"/>
 <approved hash="106,1,231.14,48.26,RESET,,,,,"/>
 <approved hash="106,1,203.2,45.72,VBAT,,,,,"/>
-<approved hash="113,1,74.8877,150.086,JP1,,,,,"/>
+<approved hash="113,1,54.5677,142.466,JP1,,,,,"/>
 <approved hash="113,1,199.983,58.5826,LEFT,,,,,"/>
 <approved hash="113,1,234.357,58.5826,RIGHT,,,,,"/>
-<approved hash="113,1,58.42,108.29,1,,,,,"/>
-<approved hash="113,1,78.74,108.29,2,,,,,"/>
+<approved hash="113,1,99.06,105.75,1,,,,,"/>
+<approved hash="113,1,119.38,105.75,2,,,,,"/>
+<approved hash="115,1,110.49,149.86,A1,,,,,"/>
+<approved hash="115,1,163.83,139.7,B4,,,,,"/>
+<approved hash="115,1,110.49,144.78,A3,,,,,"/>
+<approved hash="115,1,110.49,134.62,A7,,,,,"/>
+<approved hash="115,1,110.49,139.7,A5,,,,,"/>
+<approved hash="115,1,163.83,134.62,B6,,,,,"/>
+<approved hash="115,1,163.83,129.54,B8,,,,,"/>
+<approved hash="115,1,110.49,132.08,A8,,,,,"/>
+<approved hash="115,1,163.83,137.16,B5,,,,,"/>
+<approved hash="115,1,110.49,142.24,A4,,,,,"/>
+<approved hash="115,1,110.49,137.16,A6,,,,,"/>
+<approved hash="115,1,163.83,142.24,B3,,,,,"/>
+<approved hash="115,1,163.83,132.08,B7,,,,,"/>
+<approved hash="115,1,110.49,147.32,A2,,,,,"/>
+<approved hash="115,1,163.83,144.78,B2,,,,,"/>
+<approved hash="115,1,163.83,147.32,B1,,,,,"/>
 </errors>
 </schematic>
 </drawing>
