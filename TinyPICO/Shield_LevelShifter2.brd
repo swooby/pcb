@@ -3,13 +3,13 @@
 <eagle version="9.4.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -3516,6 +3516,8 @@
 <rectangle x1="23.400003125" y1="6.87578125" x2="35.653978125" y2="6.8828875" layer="26" rot="R90"/>
 <rectangle x1="23.424896875" y1="6.857996875" x2="35.643309375" y2="6.865109375" layer="26" rot="R90"/>
 <rectangle x1="23.4569" y1="6.83310625" x2="35.62553125" y2="6.84021875" layer="26" rot="R90"/>
+<text x="26.416" y="13.843" size="0.7112" layer="22" rot="MR0">https://github.com/swooby/pcb/tree/master/TinyPICO</text>
+<text x="26.416" y="11.557" size="0.7112" layer="22" rot="MR0">GPIO to Input Pin #:</text>
 </plain>
 <libraries>
 <library name="pinhead" urn="urn:adsk.eagle:library:325">

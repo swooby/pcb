@@ -12763,27 +12763,27 @@ Solder type</description>
 <approved hash="106,1,203.2,53.34,3V3,,,,,"/>
 <approved hash="106,1,231.14,48.26,RESET,,,,,"/>
 <approved hash="106,1,203.2,45.72,VBAT,,,,,"/>
-<approved hash="113,1,54.5677,142.466,JP1,,,,,"/>
-<approved hash="113,1,199.983,58.5826,LEFT,,,,,"/>
-<approved hash="113,1,234.357,58.5826,RIGHT,,,,,"/>
+<approved hash="113,1,54.5677,142.436,JP1,,,,,"/>
+<approved hash="113,1,199.983,58.5521,LEFT,,,,,"/>
+<approved hash="113,1,234.357,58.5521,RIGHT,,,,,"/>
 <approved hash="113,1,99.06,105.75,8,,,,,"/>
 <approved hash="113,1,119.38,105.75,7,,,,,"/>
-<approved hash="115,1,163.83,142.24,B3,,,,,"/>
-<approved hash="115,1,163.83,132.08,B7,,,,,"/>
-<approved hash="115,1,110.49,134.62,A7,,,,,"/>
-<approved hash="115,1,110.49,139.7,A5,,,,,"/>
-<approved hash="115,1,110.49,132.08,A8,,,,,"/>
-<approved hash="115,1,110.49,149.86,A1,,,,,"/>
-<approved hash="115,1,163.83,134.62,B6,,,,,"/>
-<approved hash="115,1,110.49,147.32,A2,,,,,"/>
-<approved hash="115,1,163.83,137.16,B5,,,,,"/>
-<approved hash="115,1,110.49,144.78,A3,,,,,"/>
-<approved hash="115,1,163.83,129.54,B8,,,,,"/>
-<approved hash="115,1,163.83,147.32,B1,,,,,"/>
-<approved hash="115,1,163.83,144.78,B2,,,,,"/>
-<approved hash="115,1,110.49,137.16,A6,,,,,"/>
 <approved hash="115,1,110.49,142.24,A4,,,,,"/>
+<approved hash="115,1,163.83,132.08,B7,,,,,"/>
 <approved hash="115,1,163.83,139.7,B4,,,,,"/>
+<approved hash="115,1,110.49,137.16,A6,,,,,"/>
+<approved hash="115,1,110.49,139.7,A5,,,,,"/>
+<approved hash="115,1,163.83,144.78,B2,,,,,"/>
+<approved hash="115,1,110.49,144.78,A3,,,,,"/>
+<approved hash="115,1,110.49,134.62,A7,,,,,"/>
+<approved hash="115,1,163.83,147.32,B1,,,,,"/>
+<approved hash="115,1,163.83,137.16,B5,,,,,"/>
+<approved hash="115,1,163.83,142.24,B3,,,,,"/>
+<approved hash="115,1,163.83,134.62,B6,,,,,"/>
+<approved hash="115,1,110.49,149.86,A1,,,,,"/>
+<approved hash="115,1,163.83,129.54,B8,,,,,"/>
+<approved hash="115,1,110.49,147.32,A2,,,,,"/>
+<approved hash="115,1,110.49,132.08,A8,,,,,"/>
 </errors>
 </schematic>
 </drawing>
