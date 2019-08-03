@@ -26,7 +26,7 @@ Hopefully similar to Adafruit's INA219 FeatherWing (https://www.adafruit.com/pro
 
 ## TinyPICO 74HCT245 Level Shifter
 
-![alt text](./TinyPICO/Shield_LevelShifter_top.png "74HCT245 Level Shifter Top")
-![alt text](./TinyPICO/Shield_LevelShifter_bottom.png "74HCT245 Level Shifter Bottom")
-![alt text](./TinyPICO/Shield_LevelShifter_top2.png "74HCT245 Level Shifter Top")
-![alt text](./TinyPICO/Shield_LevelShifter_bottom2.png "74HCT245 Level Shifter Bottom")
+![alt text](./TinyPICO/Shield_LevelShifter2_top.png "74HCT245 Level Shifter Top")
+![alt text](./TinyPICO/Shield_LevelShifter2_bottom.png "74HCT245 Level Shifter Bottom")
+![alt text](./TinyPICO/Shield_LevelShifter2_top2.png "74HCT245 Level Shifter Top")
+![alt text](./TinyPICO/Shield_LevelShifter2_bottom2.png "74HCT245 Level Shifter Bottom")
